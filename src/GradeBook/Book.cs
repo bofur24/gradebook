@@ -1,13 +1,20 @@
+using System.Collections.Generic;
+
 namespace GradeBook
 {
     class Book
     {
+        public Book() //Added Constructor
+        {
+            grades = new List<double>();
+        }
+
+
         public void AddGrade(double grade)
         {
-            if (true)
-            {
-                
-            }
+            grades.Add(grade);
         }
+
+        List<double> grades;
     }
 }
