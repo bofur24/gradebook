@@ -4,9 +4,10 @@ namespace GradeBook
 {
     class Book
     {
-        public Book() //Added Constructor
+        public Book(string name) //Added Constructor
         {
             grades = new List<double>();
+            this.name = name;
         }
 
 
@@ -15,6 +16,7 @@ namespace GradeBook
             grades.Add(grade);
         }
 
-        List<double> grades;
+        private List<double> grades;
+        private string name;
     }
 }
